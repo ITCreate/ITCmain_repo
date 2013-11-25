@@ -1,0 +1,75 @@
+@CHARSET "UTF-8";
+
+.sample{
+	/*矩形に角丸をつける。半径nピクセルの円を角にする。*/
+	border-radius: 10px 10px 10px 10px; 
+	border-radius: 50%;/*丸になる*/
+	
+	/*図形内の背景を画像にする。*/
+	background-image:url('xxx.jpg');
+	
+	/*色の指定・透過。*/
+	background-color: rgba(0,0,0,0.5);/*RGB+透過度*/
+	opacity: 0.5;/*透過度*/
+	
+	/*boxに影をつける。複数指定可能。(横ずらし,縦ずらし,ぼかし,色)*/
+	box-shadow: 10px 20px 5px, rgba(0,0,0,1);
+	
+	/*テキストに影をつける。*/
+	text-shadow: 10px 10px 4px, rgba(0,0,0,1);
+	
+	/*線形グラデーション。対応がブラウザで異なる。グラデーションの色、幅、方向などを指定。*/
+	background: liner-gradient(red 10px, blue 10px, yellow);
+	
+	/*円形グラデーション。色、幅、基点などを指定。*/
+	background: radial-gradient(red, blue, yellow);
+	
+	/*要素の変形。*/
+	tracsform: scale(1.5, 1.5);/*拡大縮小*/
+	transform: translate(20px, 10px);/*移動*/
+	transform: rotate(45deg);/*傾き*/
+	
+	/*アニメーション*/
+	transition-property: all; /*変化部位*/
+	transition-duration: 1s;/*アニメ時間*/
+	transition-timing-function: linear;/*変化の加速度*/
+	transition-delay: 2s;/*開始ディレイ*/
+	
+	animation-name: animationTest;
+	animation-duration: 5s;
+	animation-timing-function: ease;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;/*繰り返し*/
+	animation-direction: normal; 
+	
+	@-webkit-keyframes animationTest {
+		0% { width: 50px; background: orange; }
+		50% { width: 100px; background: blue; }
+		100% { width: 150px; background: yellow; }
+	}
+	
+	/*属性セレクタ。特定の属性を持つやつを指定。*/
+	a[href="http://xxx.jp"]
+		color: yellow;
+	}
+	
+	a[href^="http"]{/*^は部分一致*/
+		color: red;
+	}
+	/*子セレクタ*/
+	div *:nth-child(2){/*2番めの子要素に適応。*/
+		color: red;
+	}
+	
+	div p:nth-of-type(2n){/*子要素のうちp要素のみ数える*/
+		color: red;
+	}
+
+	/*状態セレクタ*/
+	input[type="radio"]: checked {
+		color :red;
+	}
+	
+	
+	/**/
+}

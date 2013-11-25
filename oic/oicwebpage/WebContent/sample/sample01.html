@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+.obj {
+	position: relation;
+	
+	height:100px;
+	width:100px;
+	
+	border-radius: 50%;
+}
+
+.obj[id="obj1"]{
+	top:0px;
+	left:0px;
+	background-color: #FF0000;
+	
+	-webkit-animation-name: animationTest;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-iteration-count: infinite;/*繰り返し*/
+	-webkit-animation-direction: normal; 
+}
+
+.obj[id="obj2"]{
+	top:0px;
+	left:0px;
+	background-color: #00FF00;
+	
+	-webkit-animation-name: animationTest;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-iteration-count: infinite;/*繰り返し*/
+	-webkit-animation-direction: normal; 
+
+}
+
+.obj[id="obj3"]{
+	top:0px;
+	left:0px;
+	background-color: #0000FF;
+	
+	-webkit-animation-name: animationTest;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 2s;
+	-webkit-animation-iteration-count: infinite;/*繰り返し*/
+	-webkit-animation-direction: normal;
+	
+}
+
+@-webkit-keyframes animationTest {
+	0% {left: 0px;}
+	50%{left: 300px;}
+	100%{left: 0px}
+}
+
+p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -0.5em -0.5em;
+
+}
+</style>
+</head>
+<body>
+	<div id="obj1" class="obj">
+		<p>あ</p>
+	</div>
+	
+	<div id="obj2" class="obj">
+		<p>い</p>
+	</div>
+	
+	<div id="obj3" class="obj">
+		<p>う</p>
+	</div>
+	
+
+	
+</body>
+</html>

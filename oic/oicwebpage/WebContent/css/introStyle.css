@@ -1,0 +1,82 @@
+@CHARSET "UTF-8";
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+/* -- header部分 -- */
+
+/*intro*/
+.intro_header {
+	background-color: #FFccFF;
+}
+
+/*introヘッダのアイコン全体の書式*/
+.childpage_icon {
+	float: left;
+	border: 1px solid black;
+	width: 200px;
+	height: 100px;
+}
+
+/*introヘッダのアイコン[紹介]*/
+.childpage_icon_char {
+	text-align: center;
+	color: orange;
+	font-size: 78px;
+	text-shadow: 5px 5px 4px rgba(200,100,100,1);
+}
+
+/*introヘッダのアイコン[-introduction-]*/
+.under_childpage_icon {
+	text-align: center;
+	color: green;
+	margin: 0 auto;
+	font-size: 18px;
+}
+
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+/*introメイン部分*/
+.intro_main {
+	clear: left;
+	background-color: #ccFFFF;
+}
+
+/*メニューアイコン*/
+.intro_menuicon {
+	display: block;
+	float: left;
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 120px;
+	height: 40px;
+	
+	background-color: green;
+}
+
+.intro_menu1{
+	clear: left;
+	diplay: block;
+	border: 1px solid black;
+	width: 600px;
+	height: 400px;
+}
+
+.intro_menu2{
+	diplay: block;
+	border: 1px solid black;
+	width: 600px;
+	height: 400px;
+}
+
+.intro_menu3{
+	diplay: block;
+	border: 1px solid black;
+	width: 600px;
+	height: 400px;
+}
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+
+
+
+
+

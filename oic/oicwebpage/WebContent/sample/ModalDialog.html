@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function init(){
+	var dom = document.getElementById("btn1");
+	dom.addEventListener("click", show);
+}
+
+function show(){
+	var value = showModalDialog("sample01.html", window, "dialogWidth: 400px; dialogHeight: 300px; resizable; center;");
+}
+</script>
+</head>
+<body onload="init()">
+<button id="btn1">モーダルダイアログ</button>
+</body>
+</html>

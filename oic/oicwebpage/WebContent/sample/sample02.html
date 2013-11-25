@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+p {	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -0.5em -0.5em;
+}
+
+.obj {
+	position: absolute;
+	
+	top:85px;
+	left:80px;
+	
+	height:100px;
+	width:100px;
+	
+	border-radius: 50%;
+}
+
+.obj[id="obj1"]{
+	background-color: #FF0000;
+	-webkit-animation-name: circleTest;
+	-webkit-animation-duration: 6s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-iteration-count: infinite;/*繰り返し*/
+	-webkit-animation-direction: normal; 
+	-webkit-transform-origin: 165px 165px;
+}
+
+.obj[id="obj1"] *:nth-of-type(1) {
+	-webkit-animation-name: RcircleTest;
+	-webkit-animation-duration: 6s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-iteration-count: infinite;/*繰り返し*/
+	-webkit-animation-direction: normal; 
+
+}
+
+.obj[id="obj2"] *:nth-of-type(1) {
+	-webkit-animation-name: RcircleTest;
+	-webkit-animation-duration: 6s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 2s;
+	-webkit-animation-iteration-count: infinite;/*繰り返し*/
+	-webkit-animation-direction: normal; 
+
+}
+
+.obj[id="obj3"] *:nth-of-type(1) {
+	-webkit-animation-name: RcircleTest;
+	-webkit-animation-duration: 6s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 4s;
+	-webkit-animation-iteration-count: infinite;/*繰り返し*/
+	-webkit-animation-direction: normal; 
+
+}
+.obj[id="obj2"]{
+	background-color: #00FF00;
+	-webkit-animation-name: circleTest;
+	-webkit-animation-duration: 6s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 2s;
+	-webkit-animation-iteration-count: infinite;/*繰り返し*/
+	-webkit-animation-direction: normal; 
+	-webkit-transform-origin: 165px 165px;
+}
+
+.obj[id="obj3"]{
+
+	background-color: #0000FF;
+	-webkit-animation-name: circleTest;
+	-webkit-animation-duration: 6s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 4s;
+	-webkit-animation-iteration-count: infinite;/*繰り返し*/
+	-webkit-animation-direction: normal; 
+	-webkit-transform-origin: 165px 165px;
+}
+
+@-webkit-keyframes circleTest {
+    from{ -webkit-transform: rotate(0); }
+    to  { -webkit-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes RcircleTest {
+    from{ -webkit-transform: rotate(0); }
+    to  { -webkit-transform: rotate(-360deg); }
+}
+</style>
+</head>
+<body>
+	<div id="obj1" class="obj">
+		<p>あ</p>
+	</div>
+
+	<div id="obj2" class="obj">
+		<p>い</p>
+	</div>
+	
+	<div id="obj3" class="obj">
+		<p>う</p>
+	</div>
+
+	
+</body>
+</html>
