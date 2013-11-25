@@ -1,0 +1,112 @@
+@CHARSET "UTF-8";
+/*
+indexページのスタイルを指定。
+
+*/
+html {
+	height: 100%;
+}
+#wrap {
+	height: 100%;
+	margin: 0 auto;
+}
+
+/*ヘッダー・メイン・フッターのスタイル*/
+header {
+	height: 120px;
+	background-color: #FFccFF;
+	
+}
+
+div#main {
+	height: 400px;
+	background-color: #FFcccc;
+}
+
+footer {
+	top: 100px; 
+	height: 100px;
+	background-color: #ccFFcc;
+}
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+/*モーダル部分全部*/
+div#modal {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 800px;
+}
+
+/*モーダル背景*/
+div#modal div.background {
+	position: relation;
+	width: 100%;
+	height: 800px;
+	background-color: #000000;
+	opacity: 0.75;
+	filter: alpha(opacity=75);/*chrome*/
+	
+}
+
+/*モーダル内部*/
+div#modal div.container {
+	position: absolute;
+	top: 100px;
+	border-radius: 10px;
+	width: 550px;
+	height: 500px;
+	background-color: #ffffff;
+}
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+/* -- メインコンテンツのスタイルを指定 -- */
+/*3つのアイコンをまとめて管理する領域(レッド)*/
+.LinkedIcons {
+	display:block;
+	height: 400px;
+	width: 810px;
+	background-color: #FF0000;
+	margin:0 auto;
+}
+
+
+/*丸ボタンを囲む空白の書式(グレー)*/
+.IconSpace {
+	float: left;
+	background-color: #cccccc;
+	border: solid 1px;
+	height: 400px;
+	width: 264px;
+}
+
+/*丸ボタン共通の書式*/
+.MenuCircle {
+	display: block;
+	height: 150px;
+	width: 150px;
+	margin:0 auto;
+	border-radius: 50%;
+	
+	/*フォント書式*/
+	text-align:center;
+	line-height:9;
+}
+
+/*丸ボタン個別の書式*/
+.MenuCircle[id="introduction"]{
+	background-color: #FF0000;
+	
+}
+
+.MenuCircle[id="action"]{
+	background-color: #00FF00;
+	
+}
+
+.MenuCircle[id="other"]{
+	background-color: #FFFFFF;
+	
+}
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
