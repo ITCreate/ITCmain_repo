@@ -5,6 +5,13 @@
 <title>Insert title here</title>
 <link rel="styleSheet" type="text/css" href="css/tagStyle.css">
 <link rel="styleSheet" type="text/css" href="css/introStyle.css">
+<script src="/js/jquery-2.0.2.min.js"></script>
+			<script>
+
+			jQuery(function ($) {
+    $("#color_div").css("border", "1px solid red");
+});
+			</script>
 </head>
 <body>
 	<!-- ここからヘッダ -->
@@ -43,8 +50,15 @@
 		<!-- メニュー１終了 -->
 		
 		<!-- メニュー２開始 -->
-		<div class="intro_menu2">
+		<div class="intro_menu2"　id="box1" style=" background-color: orange">
 			<p>あああああ</p>
+			<form>
+  			  <input type="button" id="btn_show2" value=".show()">
+   			　 <input type="button" id="btn_hide2" value=".hide()">
+			</form>
+			
+			<div id="color_div">ここのDIVの枠線をjQueryで変更します</div>
+
 		</div>
 		<!-- メニュー２終了 -->
 		
