@@ -5,6 +5,7 @@
 <title>Insert title here</title>
 <link rel="styleSheet" type="text/css" href="css/tagStyle.css">
 <link rel="styleSheet" type="text/css" href="css/introStyle.css">
+<<<<<<< HEAD
 <script src="/js/jquery-2.0.2.min.js"></script>
 			<script>
 
@@ -12,6 +13,40 @@
     $("#color_div").css("border", "1px solid red");
 });
 			</script>
+=======
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script type="text/javascript">
+$("body").ready(function(){
+	var window_width = $(window).width();
+	if(window_width > 600){
+		$("#intro_menu1").width(window_width);
+		$("#intro_menu2").width(window_width);
+		$("#intro_menu3").width(window_width);
+		$("#intro_menu4").width(window_width);
+
+		var sum = ($("#intro_menu1").width() + 4) * 4;
+		$("#intro_main").width(sum);
+	}
+	
+});
+
+$(window).resize(function(){
+	var window_width = $(window).width();
+	if(window_width > 900){
+		$("#intro_menu1").width(window_width);
+		$("#intro_menu2").width(window_width);
+		$("#intro_menu3").width(window_width);
+		$("#intro_menu4").width(window_width);
+		
+		var sum = ($("#intro_menu1").width() + 4) * 4;
+		$("#intro_main").width(sum);
+	}
+});
+</script>
+
+>>>>>>> 8e14548b20d46ab3502c8e1d9e13de3d766e5ec8
 </head>
 <body>
 	<!-- ここからヘッダ -->
@@ -21,35 +56,38 @@
 			<h2 class="under_childpage_icon">-Introduction-</h2>
 		</div>
 		
-		<img src="images/test/headimg.jpg" style="width:200px;height:100px;"></img>
-	</div>
-	
-	<!-- ここまでヘッダ -->
-	
-	<!-- ここからメインコンテンツ -->
-	<div class="intro_main">
-	
-		<!-- メニューセレクタ -->
+		<img src="images/test/headimg.jpg" style="float: left;width:200px;height:100px;"></img>
+		
+		<!-- ここからメニューリスト -->
 		<div>
-			<ul class="intro_menulist">
-				<li><a class="intro_menuicon">部長挨拶</a></li>
-				<li><a class="intro_menuicon">部活概要</a></li>
-				<li><a class="intro_menuicon">部員一覧</a></li>
-			</ul>
+			<ul>
+				<li><a class="intro_menuicon" href="#intro_menu1">ページTOP</a></li>
+				<li><a class="intro_menuicon" href="#intro_menu2">部長挨拶</a></li>
+				<li><a class="intro_menuicon" href="#intro_menu3">部活概要</a></li>
+				<li><a class="intro_menuicon" href="#intro_menu4">部員一覧</a></li>
+			</ul>	
 		</div>
-		<!-- メニューセレクタ終了 -->
-	
+		<!-- メニューリスト終了 -->
+		
+	</div>
+	<!-- ここまでヘッダ -->
+
+	<!-- ここからメインコンテンツ -->
+	<div id="intro_main" class="intro_main">
 		<!-- ここから個別メニュー -->
 		
 		<!-- メニュー１開始 -->
-		<div class="intro_menu1">
-			<p>あばばばばば</p>
-			<img src="images/test/teacher.jpg"></img>
-			
+		<div id="intro_menu1" class="intro_menu1 intro_main_common">
+			<div class="vcatch">
+				ここに画像を挿入
+			</div>
+			<p　class="intext">あばばばばば</p>
+			<img src="images/test/teacher.jpg" class="infig"></img>
 		</div>
 		<!-- メニュー１終了 -->
 		
 		<!-- メニュー２開始 -->
+<<<<<<< HEAD
 		<div class="intro_menu2"　id="box1" style=" background-color: orange">
 			<p>あああああ</p>
 			<form>
@@ -59,18 +97,32 @@
 			
 			<div id="color_div">ここのDIVの枠線をjQueryで変更します</div>
 
+=======
+		<div id="intro_menu2" class="intro_menu2 intro_main_common">
+			<p　class="intext">あああああ</p>
+			<img src="images/test/teacher.jpg" class="infig"></img>
+>>>>>>> 8e14548b20d46ab3502c8e1d9e13de3d766e5ec8
 		</div>
 		<!-- メニュー２終了 -->
 		
 		<!-- メニュー３開始 -->
-		<div class="intro_menu3">
-			<p>あばば</p>
+		<div id="intro_menu3" class="intro_menu3 intro_main_common">
+			<p　class="intext">あばば</p>
+			<img src="images/test/teacher.jpg" class="infig"></img>
 		</div>
 		<!-- メニュー３終了 -->
+		
+		<!-- メニュー４開始 -->
+		<div id="intro_menu4" class="intro_menu4 intro_main_common">
+			<p　class="intext">あば</p>
+			<img src="images/test/teacher.jpg" class="infig"></img>
+		</div>
+		<!-- メニュー４終了 -->
 	</div>
 	<!-- ここまでメインコンテンツ -->
 	
-	<!-- ここからフッタ(未使用) -->
+	<!-- ここからフッタ -->
+
 	<!-- ここまでフッタ -->
 </body>
 </html>

@@ -6,6 +6,9 @@
 /*intro*/
 .intro_header {
 	background-color: #FFccFF;
+	height: 120px;
+	width: 2200px;
+	
 }
 
 /*introヘッダのアイコン全体の書式*/
@@ -13,7 +16,7 @@
 	float: left;
 	border: 1px solid black;
 	width: 200px;
-	height: 100px;
+	height: 110px;
 }
 
 /*introヘッダのアイコン[紹介]*/
@@ -32,15 +35,15 @@
 	font-size: 18px;
 }
 
-
-/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
-/*introメイン部分*/
-.intro_main {
-	clear: left;
-	background-color: #ccFFFF;
+/* -- メニューリストのスタイル --*/
+/*メニューリストのスタイル*/
+.floatmenu {
+	width: 700px;
+	height: 40px;
+	border: 1px solid black;
 }
 
-/*メニューアイコン*/
+/*アイコンのスタイル*/
 .intro_menuicon {
 	display: block;
 	float: left;
@@ -52,28 +55,63 @@
 	
 	background-color: green;
 }
-
-.intro_menu1{
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+/*introメイン部分*/
+.intro_main {
 	clear: left;
-	diplay: block;
-	border: 1px solid black;
-	width: 600px;
-	height: 400px;
+	display: block;
+	background-color: #ccFFFF;
+	height: 450px;
+	width: 2500px;
 }
 
-.intro_menu2{
-	diplay: block;
-	border: 1px solid black;
+.intro_main_common {
+	float: left;
+	display: block;
 	width: 600px;
-	height: 400px;
+	height: 500px;
+	border: 1px solid black;
+}
+
+/* -- ページTOPのコンテンツ --*/
+.intro_menu1{
+	background-color: #FF0000;
+
+}
+
+.vcatch {
+	position: absolute;
+	left: 60%;
+	height: 500px;
+	width: 200px;
+	background-color: #cccccc;
+}
+
+/*動きを見るための暫定的なクラス*/
+.intext {
+	float: left;
+}
+
+.infig {
+	float: right;
+}
+/*【部長から】のコンテンツ*/
+.intro_menu2{
+	background-color: #00FF00;
+
 }
 
 .intro_menu3{
-	diplay: block;
-	border: 1px solid black;
-	width: 600px;
-	height: 400px;
+	background-color: #0000FF;
+
 }
+
+.intro_menu4{
+	background-color: #00FFFF;
+
+}
+
+
 /* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
 
