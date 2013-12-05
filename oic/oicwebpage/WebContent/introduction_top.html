@@ -5,6 +5,7 @@
 <title>Insert title here</title>
 <link rel="styleSheet" type="text/css" href="css/tagStyle.css">
 <link rel="styleSheet" type="text/css" href="css/introStyle.css">
+<<<<<<< HEAD
 <script src="/js/jquery-2.0.2.min.js"></script>
 			<script>
 
@@ -17,9 +18,40 @@ alert("OK");
 }else{
 alert("NO");
 }z
+=======
+
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="JS/scroll_event.js" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+$("body").ready(function(){
+	var window_width = $(window).width();
+
+	if(window_width > 600){
+		$("#menu1_top").width(window_width);
+		var sum = ($("#menu1_top").width() + $("#menu2_abst").width() 
+				+ $("#menu3_action").width() + $("#menu4_member").width() + 10);
+		$("#inclusion_maincontents").width(sum);
+	}
+});
+
+$(window).resize(function(){
+	var window_width = $(window).width();
+	if(window_width > 1300){
+		$("#menu1_top").width(window_width);
+		
+		var sum = ($("#menu1_top").width() + $("#menu2_abst").width() 
+				+ $("#menu3_action").width() + $("#menu4_member").width() + 10);
+		$("#inclusion_maincontents").width(sum);
+	}
+});
+</script>
+
+>>>>>>> 0ce95bf265cbe7b56951610414f48da4db85fd4e
 </head>
-<body>
+<body style="overflow-y: hidden">
+<div id="wrap">
 	<!-- ここからヘッダ -->
+<<<<<<< HEAD
 	<div class="intro_header">
 		<div class="childpage_icon">
 			<h1 class="childpage_icon_char">紹介</h1>
@@ -29,9 +61,28 @@ alert("NO");
 		<img src="images/test/headimg.jpg" style="width:200px;height:100px;"></img>
 	</div>
 	
+=======
+	<div id="intro_header" class="intro_header">
+	<div id="header_wrap" class="db">
+		<img src="images/test/img_logo.jpg" class="ITC_icon"></img>
+		<div id="debug">aa</div>
+		<!-- ここからメニューリスト -->
+		<div>
+			<ul>
+				<li><a class="menuicon_frame" href="#menu1_top">ページTOP</a></li>
+				<li><a class="menuicon_frame" href="#menu2_abst">部長概要</a></li>
+				<li><a class="menuicon_frame" href="#menu3_action">活動紹介</a></li>
+				<li><a class="menuicon_frame" href="#menu4_member">部員紹介</a></li>
+			</ul>	
+		</div>
+		<!-- メニューリスト終了 -->
+	</div>
+ 	</div>
+>>>>>>> 0ce95bf265cbe7b56951610414f48da4db85fd4e
 	<!-- ここまでヘッダ -->
 	
 	<!-- ここからメインコンテンツ -->
+<<<<<<< HEAD
 	<div class="intro_main">
 	
 		<!-- メニューセレクタ -->
@@ -51,10 +102,41 @@ alert("NO");
 			<p>あばばばばば</p>
 			<img src="images/test/teacher.jpg"></img>
 			
+=======
+		<div id="inclusion_maincontents" class="db">
+		<!-- ここから個別メニュー -->
+		
+		<!-- メニュー１(top)開始 -->
+		<div id="menu1_top" class="mainarea_common">
+
+			<!-- キャッチコピー -->
+			<div id="vcatch" class="vcatch">
+				ここに画像を挿入
+			</div>
+			<!-- キャッチコピー終了 -->
+			
+			<!-- 更新情報 -->
+			<div id="whatsnew">
+				<ul id="renew_list">
+					<li>
+						2013/12/01更新!&nbsp;
+						<a href="test.html" target="_blank">ホームページ作成開始！</a>
+					</li>
+					<li>
+						2013/12/01更新!&nbsp;
+						<a href="test.html" target="_blank">ホームページ作成始動！</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 更新情報終了 -->
+			
+			<img id="obj3" src="images/test/arrow.png" class="infig"></img>
+>>>>>>> 0ce95bf265cbe7b56951610414f48da4db85fd4e
 		</div>
 		<!-- メニュー１終了 -->
 		
 		<!-- メニュー２開始 -->
+<<<<<<< HEAD
 		<div class="intro_menu2"　id="box1" style=" background-color: orange">
 			<p>あああああ</p>
 			<form>
@@ -64,10 +146,22 @@ alert("NO");
 			
 			<div id="color_div">ここのDIVの枠線をjQueryで変更します</div>
 
+=======
+		<div id="menu2_abst" class="mainarea_common">
+			<div id="obj1" class="dist1">
+				<p>ITC部</p>
+				<p>ITC部はシステム構築をする部活。</p>
+				<p>どうぞ。</p>
+				<p>活動日時　：　毎週　月曜日・木曜日　16:30～</p>
+				<p>場所　：　8A教室</p>
+			</div>
+			<img id="obj2" src="images/test/harabe-san.png" class="dist1"></img>
+>>>>>>> 0ce95bf265cbe7b56951610414f48da4db85fd4e
 		</div>
 		<!-- メニュー２終了 -->
 		
 		<!-- メニュー３開始 -->
+<<<<<<< HEAD
 		<div class="intro_menu3">
 			<p>あばば</p>
 		</div>
@@ -76,6 +170,37 @@ alert("NO");
 	<!-- ここまでメインコンテンツ -->
 	
 	<!-- ここからフッタ(未使用) -->
+=======
+		<div id="menu3_action" class="mainarea_common">
+			<img src="images/test/teacher.jpg"></img>
+		</div>
+		<!-- メニュー３終了 -->
+		
+		<!-- メニュー４開始 -->
+		<div id="menu4_member" class="mainarea_common">
+			<div id="memberwrap">
+				<div id="obj4-1" class="type-member">obj4-1</div>
+				<div id="obj4-2" class="type-member">obj4-2</div>
+				<div id="obj4-3" class="type-member">obj4-3</div>
+				<div id="obj4-4" class="type-member">obj4-4</div>
+			</div>
+			
+		</div>
+		<!-- メニュー４終了 -->
+	</div>
+	<!-- ここまでメインコンテンツ -->
+	
+	<!-- ここからフッタ -->
+	<footer>
+	<div id="footer_wrap">
+		<div id="copyright" class="copyright">
+			● Copyright &copy;  2013	OIC - 大阪情報コンピュータ専門学校 ITCreate部<br>
+			All Right Reserved.
+		</div>
+	</div>
+	</footer>
+>>>>>>> 0ce95bf265cbe7b56951610414f48da4db85fd4e
 	<!-- ここまでフッタ -->
+</div>
 </body>
 </html>
