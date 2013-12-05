@@ -20,7 +20,7 @@ $(window).scroll(function(){
 	prev_scrollX = scrollX;
 			
 	//GO�T�C���̕\��/��\��
-	$("#obj3").fadeOut("slow");			
+	$("#obj3").fadeOut("slow");	
 	if(scrollX == 0){
 		$("#obj3").fadeIn("fast");
 	}
